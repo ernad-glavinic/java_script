@@ -11,7 +11,7 @@
     <div>
       <label for="hourly-rate">Hourly rate</label>
       <input
-        type="text"
+        type="number"
         id="hourly-rate"
         name="hourly-rate"
         placeholder="Enter your hourly rate in USD ($)"
@@ -19,21 +19,21 @@
     </div>
 
     <div>
-      <label for="expensens">Expensens</label>
+      <label for="expenseRate">Expensens</label>
       <input
-        type="text"
-        id="expensens"
-        name="expensens"
-        placeholder="Enter expensens in percentages"
+        type="number"
+        id="expenseRate"
+        name="expenseRate"
+        placeholder="Enter expense rate in percentages"
       />
     </div>
 
     <div>
-      <label for="health-insurance">Health insurance</label>
+      <label for="health-insurance-rate">Health insurance</label>
       <input
-        type="text"
-        id="health-insurance"
-        name="health-insurance"
+        type="number"
+        id="health-insurance-rate"
+        name="health-insurance-rate"
         placeholder="Enter health insurance in percentages"
       />
     </div>
@@ -41,7 +41,7 @@
     <div>
       <label for="tax-rate">Tax rate</label>
       <input
-        type="text"
+        type="number"
         id="tax-rate"
         name="tax-rate"
         placeholder="Enter tax rate in percentages"
@@ -49,16 +49,41 @@
     </div>
 
     <div>
-      <button id="calculate">Calculate</button>
+      <button id="calculate_btn">Calculate</button>
     </div>
 
-    <p>Amount of expenses:</p>
-    <p>Amount after deducting expenses:</p>
-    <p>Amount for payment of health insurance:</p>
-    <p>Tax base:</p>
-    <p>Amount of income tax 10%, for payment:</p>
-    <p>Total payment obligations of the freelancer:</p>
-    <p>The total that I have left:</p>
+    <div>Expenses rate: <span id="expense-rate-display"></span>%</div>
+    <div>
+      Amount of expenses: <span id="amount-of-expenses-display"></span>$
+    </div>
+    <div>
+      Amount after deducting expenses:
+      <span id="amount-after-expenses-display"></span>$
+    </div>
+    <div>
+      Health insurance rate: <span id="health-insurance-rate-display"></span>%
+    </div>
+    <div>
+      Amount for payment of health insurance:
+      <span id="health-insurance-amount-display"></span>$
+    </div>
+    <div>Tax rate: <span id="tax-rate-display"></span>%</div>
+    <div>
+      Tax base:
+      <span id="tax-base-display"></span>$
+    </div>
+    <div>
+      Amount of tax for payment:
+      <span id="amount-of-tax-display"></span>$
+    </div>
+    <div>
+      Total payment obligations of the freelancer:
+      <span id="amount-to-pay-display"></span>$
+    </div>
+    <div>
+      Amount left in pocket:
+      <span id="amount-left-display"></span>$
+    </div>
 
     <script src="js/script.js"></script>
   </body>
