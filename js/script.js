@@ -45,13 +45,13 @@ calculateBtn.addEventListener("click", () => {
 
   // Display variables on page
   displayExpenseRateDisplay.innerText = expensensRate;
-  displayAmountOfExpensesDisplay.innerText = amountOfExpenses;
-  amountAfterExpensesDisplay.innerText = amountAfterExpenses;
+  displayAmountOfExpensesDisplay.innerText = amountOfExpenses.toFixed(2);
+  amountAfterExpensesDisplay.innerText = amountAfterExpenses.toFixed(2);
   healthInsuranceRateDisplay.innerText = healthInsuranceRate;
-  healthInsuranceAmountDisplay.innerText = amountOfHealthInsurance;
-  taxBaseDisplay.innerText = taxBase;
-  amountOfTaxDisplay.innerText = amountOfTax;
+  healthInsuranceAmountDisplay.innerText = amountOfHealthInsurance.toFixed(2);
+  taxBaseDisplay.innerText = taxBase.toFixed(2);
+  amountOfTaxDisplay.innerText = amountOfTax.toFixed(2);
   taxRateDisplay.innerText = taxRate;
-  amountToPayDisplay.innerText = amountToPay;
-  amountLeftDisplay.innerText = amountLeft;
+  amountToPayDisplay.innerText = amountToPay.toFixed(2);
+  amountLeftDisplay.innerText = amountLeft.toFixed(2);
 });
