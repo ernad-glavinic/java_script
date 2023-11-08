@@ -8,6 +8,58 @@
   <body>
     <h1>Tax and Hourly rate calculator</h1>
 
+    <div>
+      <label for="hourly-rate">Hourly rate</label>
+      <input
+        type="text"
+        id="hourly-rate"
+        name="hourly-rate"
+        placeholder="Enter your hourly rate in USD ($)"
+      />
+    </div>
+
+    <div>
+      <label for="expensens">Expensens</label>
+      <input
+        type="text"
+        id="expensens"
+        name="expensens"
+        placeholder="Enter expensens in percentages"
+      />
+    </div>
+
+    <div>
+      <label for="health-insurance">Health insurance</label>
+      <input
+        type="text"
+        id="health-insurance"
+        name="health-insurance"
+        placeholder="Enter health insurance in percentages"
+      />
+    </div>
+
+    <div>
+      <label for="tax-rate">Tax rate</label>
+      <input
+        type="text"
+        id="tax-rate"
+        name="tax-rate"
+        placeholder="Enter tax rate in percentages"
+      />
+    </div>
+
+    <div>
+      <button id="calculate">Calculate</button>
+    </div>
+
+    <p>Amount of expenses:</p>
+    <p>Amount after deducting expenses:</p>
+    <p>Amount for payment of health insurance:</p>
+    <p>Tax base:</p>
+    <p>Amount of income tax 10%, for payment:</p>
+    <p>Total payment obligations of the freelancer:</p>
+    <p>The total that I have left:</p>
+
     <script src="js/script.js"></script>
   </body>
 </html>
