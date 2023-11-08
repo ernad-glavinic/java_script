@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax and Hourly rate calculator</title>
+    <link rel="stylesheet" href="style/main-style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="main-heading">Tax and Hourly rate calculator</h1>
+      <a href="monthly-rate-calculator.html">Monthly rate calculator</a>
+      <div class="main-container">
+        <div class="input-elements-wrapper">
+          <div>
+            <label for="hourly-rate">Hourly rate</label>
+            <input
+              type="number"
+              id="hourly-rate"
+              name="hourly-rate"
+              placeholder="Enter your hourly rate in USD ($)"
+            />
+          </div>
+
+          <div>
+            <label for="expenseRate">Expensens</label>
+            <input
+              type="number"
+              id="expenseRate"
+              name="expenseRate"
+              placeholder="Enter expense rate in percentages"
+            />
+            <span class="rate-error">Rate must be between 0 and 100 % </span>
+          </div>
+
+          <div>
+            <label for="health-insurance-rate">Health insurance</label>
+            <input
+              type="number"
+              id="health-insurance-rate"
+              name="health-insurance-rate"
+              placeholder="Enter health insurance in percentages"
+            />
+            <span class="rate-error">Rate must be between 0 and 100 % </span>
+          </div>
+
+          <div>
+            <label for="tax-rate">Tax rate</label>
+            <input
+              type="number"
+              id="tax-rate"
+              name="tax-rate"
+              placeholder="Enter tax rate in percentages"
+            />
+            <span class="rate-error">Rate must be between 0 and 100 % </span>
+          </div>
+
+          <div>
+            <button id="calculate_btn">Calculate</button>
+          </div>
+        </div>
+
+        <div class="display-values-container">
+          <div>
+            Hourly rate:
+            <span id="hourly-rate-display"></span>$
+          </div>
+          <h2>Expenses</h2>
+          <div>
+            Expenses rate:
+            <span id="expense-rate-display"></span>%
+          </div>
+          <div>
+            Amount of expenses: <span id="amount-of-expenses-display"></span>$
+          </div>
+          <div>
+            Amount after deducting expenses:
+            <span id="amount-after-expenses-display"></span>$
+          </div>
+          <h2>Health insurance</h2>
+          <div>
+            Health insurance rate:
+            <span id="health-insurance-rate-display"></span>%
+          </div>
+          <div>
+            Amount for payment of health insurance:
+            <span id="health-insurance-amount-display"></span>$
+          </div>
+          <h2>Taxses</h2>
+          <div>Tax rate: <span id="tax-rate-display"></span>%</div>
+          <div>
+            Tax base:
+            <span id="tax-base-display"></span>$
+          </div>
+          <div>
+            Amount of tax for payment:
+            <span id="amount-of-tax-display"></span>$
+          </div>
+          <h2>Total</h2>
+          <div>
+            Total payment obligations of the freelancer:
+            <span id="amount-to-pay-display"></span>$
+          </div>
+          <div>
+            Amount left in pocket:
+            <span id="amount-left-display"></span>$
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/hourly-rate.js"></script>
+  </body>
+</html>

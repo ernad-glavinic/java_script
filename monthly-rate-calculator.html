@@ -9,6 +9,7 @@
   <body>
     <div class="wrapper">
       <h1 class="main-heading">Tax and Hourly rate calculator</h1>
+      <a href="hourly-rate-calculator.html">Hourly rate calculator</a>
       <div class="main-container">
         <div class="input-elements-wrapper">
           <div>
@@ -18,6 +19,16 @@
               id="hourly-rate"
               name="hourly-rate"
               placeholder="Enter your hourly rate in USD ($)"
+            />
+          </div>
+
+          <div>
+            <label for="number-of-hours">Number of hours</label>
+            <input
+              type="number"
+              id="number-of-hours"
+              name="number-of-hours"
+              placeholder="Enter your number of hours"
             />
           </div>
 
@@ -64,6 +75,14 @@
             Hourly rate:
             <span id="hourly-rate-display"></span>$
           </div>
+          <div>
+            Number of hours:
+            <span id="number-of-hours-display"></span>h
+          </div>
+          <div>
+            Total income:
+            <span id="total-income-display"></span>$
+          </div>
           <h2>Expenses</h2>
           <div>
             Expenses rate:
@@ -108,7 +127,8 @@
       </div>
     </div>
 
-    <script src="js/functions.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/monthly-rate.js"></script>
   </body>
 </html>

@@ -10,13 +10,16 @@
   align-items: center;
   justify-content: center;
 }
+
 .main-container {
   width: 70%;
   border: 1px solid black;
   padding: 20px 40px;
   display: flex;
   justify-content: space-around;
+  margin-top: 20px;
 }
+
 .main-heading {
   text-align: center;
 }
@@ -71,7 +74,8 @@ button {
 }
 
 #amount-left-display,
-#hourly-rate-display {
+#hourly-rate-display,
+#total-income-display {
   color: green;
 }
 
